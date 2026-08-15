@@ -1,22 +1,35 @@
+# AI Software Engineering Assistant
 
-# AI Engineering Demo
+A multi-agent AI system that analyzes GitHub issues and coordinates requirements analysis, coding analysis, code review, testing, bug investigation, and documentation through specialised AI agents.
 
-A small Python project used to demonstrate an
-AI-powered software engineering workflow.
+## 1. Problem Analysis
 
-## Features
+### 1.1 Business Context
 
-- Basic calculator operations
-- Simple token validation
-- Automated tests
+Software development teams spend significant time manually analyzing GitHub issues, understanding requirements, planning implementations, reviewing code, designing tests, investigating bugs, and documenting changes. This project automates and coordinates these activities using specialised AI agents while keeping a human approval step before repository changes.
 
-## Project Structure
+### 1.2 Stakeholders
 
-```text
-src/
-├── calculator.py
-└── auth.py
+- Software developers
+- Software engineering teams
+- Code reviewers
+- QA/testing engineers
+- Project/engineering managers
+- Repository maintainers
 
-tests/
-├── test_calculator.py
-└── test_auth.py
+### 1.3 Problem Statement
+
+Traditional software engineering workflows require multiple manual handoffs between requirements analysis, implementation planning, code review, testing, debugging, and documentation. This can lead to delays, inconsistent outputs, and missed information. The proposed system uses multiple specialised AI agents that collaborate through structured handoffs and shared workflow context to streamline this process.
+
+### 1.4 Objectives
+
+- Automate GitHub issue analysis.
+- Use specialised AI agents for different software-engineering tasks.
+- Enable structured agent-to-agent handoffs.
+- Maintain shared workflow context using `WorkflowState`.
+- Generate structured outputs using Pydantic models.
+- Include testing and bug-investigation stages.
+- Generate implementation documentation.
+- Include human approval before repository changes.
+- Provide error handling throughout the workflow.
+- Demonstrate a complete end-to-end multi-agent engineering workflow.
